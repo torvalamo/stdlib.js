@@ -1,0 +1,11 @@
+{
+  "name": "stdlib",
+  "description": "JavaScript standard library",
+  "version": "0.0.1",
+  "repository": "torvalamo/stdlib.js",
+  "main": "index.js",
+  "license": "MIT",
+  "engines": {
+    "node": "*"
+  }
+}
