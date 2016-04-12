@@ -28,7 +28,7 @@ If `after` is not set, and the length of `before` is an even number, then `befor
     // 'My string.'
     
     ('My string.').wrap('\'', null)
-    // aMy string.
+    // 'My string.
 
 #### String.prototype.format([...args])
 
@@ -41,6 +41,7 @@ Almost exact copy of Python's [Advanced String Formatting](https://www.python.or
 The exceptions are:
 
 - JS does not differentiate between floats and integers on a type level, so that the `n` and `g` types will always return the same as `f`.
+- Padding with zeros are only supported through fill and align (e.g. `0>`), not by a leading zero on width.
 - This version does not support explicit conversion flags
 - Also obviously the duck typed `__format__` stuff is not supported.
 
