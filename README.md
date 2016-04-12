@@ -6,6 +6,11 @@ A JavaScript standard library.
 
     require('./stdlib') // changes all the prototypes
 
+Or you could specifically include just the ones you need.
+
+    require('./stdlib/String') // all string functions
+    require('./stdlib/Object/merge') // only the merge function
+
 The module itself doesn't return anything, and it should stay cached in the module system, so requiring it multiple times is not an issue.
 
 ### String
