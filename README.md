@@ -4,9 +4,9 @@ A JavaScript standard library.
 
 ## Use
 
-    const stdlib = require('./stdlib')
-    
-    stdlib.globalize() // globalizes all functions to their respective prototypes
+    require('./stdlib') // changes all the prototypes
+
+The module itself doesn't return anything, and it should stay cached in the module system, so requiring it multiple times is not an issue.
 
 ### String
 
